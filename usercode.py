@@ -11,7 +11,7 @@ def handle(data):
     }
 
 
-    key = """-----BEGIN PRIVATE KEY-----
+    key = b"""-----BEGIN PRIVATE KEY-----
     MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCx0RTzn7Vd0vIW
     Qw2XSfnJZvNePJvfcHTUTQBO+nzqQpCP/wElOoSIMGiEn6SFWt6rHSnP2Skef9Z1
     wtFKFmKAEZ0EElkjcAPsusi7lhDNzMJdbZTxD/JhEe1+Ou+X20pEMR7SN/3uL8l/
@@ -38,8 +38,7 @@ def handle(data):
     56z5ia4oskCjCnAJfw/Vt+mb/H+kG9t4gUKocHfWTdKj0KKU8r8IZZuMMoZQmM9E
     K0VZmh/P/M4B89DUCLSso5cdO9TPJb+sArRasKIEeVpir+QVc2qMELHMKtjM1OEc
     9/QGmPT0FadG8Fk7yJgGxI4=
-    -----END PRIVATE KEY-----
-    """
+    -----END PRIVATE KEY-----"""
 
     data["token"] = jwt.encode(
         payload=payload_data,
