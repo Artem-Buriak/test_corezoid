@@ -1,3 +1,3 @@
-def handle(data):
+def handle():
 	data = "hello world"
     return data
