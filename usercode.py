@@ -1,4 +1,4 @@
-import jwt
+import json
 def handle(data):
     data["hello"] = "Hello world!"
     
