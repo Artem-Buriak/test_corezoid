@@ -1,4 +1,4 @@
-from pyJWT import jwt
+import jwt as lib1
 def handle(data):
     data["hello"] = "Hello world!"
     
@@ -40,7 +40,7 @@ def handle(data):
     -----END PRIVATE KEY-----
     """
 
-    data["token"] = jwt.encode(
+    data["token"] = lib1.encode(
         payload=payload_data,
         key=key,
         algorithm='RS256'
