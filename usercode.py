@@ -1,6 +1,6 @@
 import jwt
 def handle(data):
-    data["hello"] = "Hello world!"
+    data["hello"] = "Hello world! Blin"
     
     payload_data = {
       "iat": 1670430472,
