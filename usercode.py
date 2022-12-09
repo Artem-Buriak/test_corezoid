@@ -2,6 +2,7 @@ import jwt
 
 def handle(data):
     data["hello"] = "Hello world! Blin"
+    from cryptography.hazmat.primitives import serialization
     
     payload_data = {
       "iat": 1670430472,
