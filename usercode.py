@@ -1,4 +1,4 @@
-import jwt as lib1
+from pyjwt import jwt as lib1
 def handle(data):
     data["hello"] = "Hello world!"
     
